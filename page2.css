@@ -1,0 +1,58 @@
+/*COME BACK TO THIS*/
+
+html{
+    height: 100%; 
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/*container 1*/
+header{
+    display: block;
+    height: 100px;
+    background: rgb(199, 57, 57);
+}
+
+/*container 2*/
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 70%;
+}
+
+
+
+.content{
+    width: 75%;
+    background-color: lightgray;
+    border: 1px solid #888888;
+    margin: 10px;
+}
+
+.sidebar{
+    width: 25%;
+    background-color: lightgray;
+    border: 1px solid #888888;
+    margin: 10px;
+}
+
+
+
+
+/*container 3*/
+footer{
+    display: block;
+    position: relative;
+    height: 200px;
+    background-color: #333333;
+}

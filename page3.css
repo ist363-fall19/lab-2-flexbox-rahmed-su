@@ -1,1 +1,73 @@
-body {font:18px/1.25 'Arial', sans-serif; }
+html{
+    height: 100%; 
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100%;
+    padding: 0px;
+    font: 18px/1.25 'Arial', sans-serif; /*given*/
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*parent: tweet-list; child: item*/
+/*parent: tweet-item; child: header, body, footer*/
+
+.tweet-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*    align-items: center; */
+}
+
+.tweet-item{
+    margin: 10px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: 335px;
+}
+
+.tweet-header{
+    display: flex;
+    flex: row;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray; 
+}
+
+img{
+    align-content: right;
+}
+
+a{
+    align-content: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+
+.tweet-body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 50%;
+}
+
+.tweet-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    border-top: 1px solid lightgray; 
+}
+
+/* In the header of every tweet, align the image and link next to each other. The link should be in the centered vertically with the image. Add 10px of space between these two elements
+Add 10px of padding bottom and the same 1px, light gray border to the bottom of the tweet header
+The body (text) of every tweet should have 20px of padding top and padding bottom. Allow the body to grow to take up any extra space in the tweet items so every tweet item and tweet body are the same height
+Align the text in the tweet footer to the right. Add 10px of padding top to the footer along with a 1px, light gray border top */
